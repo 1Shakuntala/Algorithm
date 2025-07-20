@@ -24,10 +24,11 @@ Given:
 arr = [7, 10, 4, 3, 20, 15]
 k = 3
 
-→ Insert 7, 10, 4 → Heap: [10, 7, 4]
-→ Add 3 → Pop 10 → Heap: [7, 4, 3]
-→ Add 20 → Pop 7 → Heap: [20, 4, 3]
-...
+→ Insert 7, 10, 4 → Min_Heap: [10, 7, 4] || k<3 ✅
+→ Add 3 → Min_Heap: [10, 7, 4, 3]  || k!<3 ❌  →→ Pop 10 → Min_Heap: [7, 4, 3]  || k<3 ✅
+→ Add 20 → Min_Heap: [20, 7, 4, 3] || k!<3 ❌  →→ Pop 20 → Min_Heap: [7, 4, 3]  || k<3 ✅
+→ Add 10 → Min_Heap: [15, 7, 4, 3] || k!<3 ❌  →→ Pop 15 → Min_Heap: [7, 4, 3]  || k<3 ✅ 
+
 
 // Max Heap
 priority_queue<int> maxHeap;
