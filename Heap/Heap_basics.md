@@ -29,12 +29,19 @@ k = 3
 → Add 20 → Min_Heap: [20, 7, 4, 3] || k!<3 ❌  → → Pop 20 → Min_Heap: [7, 4, 3]  || k<3 ✅
 → Add 10 → Min_Heap: [15, 7, 4, 3] || k!<3 ❌  → → Pop 15 → Min_Heap: [7, 4, 3]  || k<3 ✅ 
 
+In C++
+  // Max Heap
+  priority_queue<int> maxHeap;
+  
+  // Min Heap
+  priority_queue<int, vector<int>, greater<int>> minHeap;
+  
+  typedef pair<int, pair<int, int>> ppi;
+  // Use ppi instead of full type everywhere
 
-// Max Heap
-priority_queue<int> maxHeap;
+In java
+  //Max Heap
+  PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+  //Min Heap
+  PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-// Min Heap
-priority_queue<int, vector<int>, greater<int>> minHeap;
-
-typedef pair<int, pair<int, int>> ppi;
-// Use ppi instead of full type everywhere
