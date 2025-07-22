@@ -29,6 +29,10 @@ k = 3
 → Add 20 → Min_Heap: [20, 7, 4, 3] || k!<3 ❌  → → Pop 20 → Min_Heap: [7, 4, 3]  || k<3 ✅
 → Add 10 → Min_Heap: [15, 7, 4, 3] || k!<3 ❌  → → Pop 15 → Min_Heap: [7, 4, 3]  || k<3 ✅ 
 
+
+C++:   push(), top(), pop();
+Java:  offer(), poll(), peek();
+
 In C++
   // Max Heap
   priority_queue<int> maxHeap;
