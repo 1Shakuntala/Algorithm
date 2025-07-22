@@ -1,16 +1,3 @@
-input:
-7
-9 3 7 6 2 0 4 
-output:
-*
-*
-*               *
-*               *       *
-*               *       *
-*               *       *                       *
-*       *       *       *                       *
-*       *       *       *       *               *
-*       *       *       *       *               *
 
 public static void buildings(int[] arr, int n) {
     // your code here
