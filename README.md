@@ -7,5 +7,5 @@ This repository contains well-organized solutions to commonly asked **Data Struc
 - [ArrayP](ArrayP/) 
 - [Heap](Heap/) 
 - [Sliding Window](SlidingWindow/)
-- [Sting](StringB/)
+- [String](StringB/)
 
